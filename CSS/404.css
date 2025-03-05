@@ -1,0 +1,79 @@
+/* 404 Error Page Styling */
+.error-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60vh;
+    background-color: #fff;
+}
+
+.error-container {
+    max-width: 600px;
+    padding: 20px;
+}
+
+/* Breadcrumb Navigation */
+.breadcrumb {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: start;
+    margin-left: -70%;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.error-title {
+    font-size: 60px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.error-text {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+    margin-top: 60px;
+}
+
+.error-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #d9534f;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.error-btn:hover {
+    background-color: #c9302c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .error-title {
+        font-size: 40px;
+    }
+
+    .error-text {
+        font-size: 16px;
+    }
+
+    .error-btn {
+        padding: 10px 20px;
+    }
+}
