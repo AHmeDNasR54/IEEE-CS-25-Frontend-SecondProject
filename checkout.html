@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>404 Not Found</title>
-    <link rel="stylesheet" href="CSS/404.css" />
+    <title>Check out</title>
     <link rel="stylesheet" href="CSS/all.min.css" />
     <link rel="stylesheet" href="CSS/normalize.css" />
     <link rel="stylesheet" href="CSS/nav&footer.css" />
+    <link rel="stylesheet" href="CSS/checkout.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -46,21 +46,99 @@
       </nav>
     </header>
     <!--  -->
-    <section class="error-section">
-      <div class="error-container">
-        <!-- Breadcrumb Navigation -->
-        <nav class="breadcrumb">
-          <a href="index.html">Home</a> /
-          <span>404 Error</span>
-        </nav>
+    <!-- Navigation (Breadcrumb) -->
+    <nav class="breadcrumb">
+      <a href="#">Home</a>/<a href="#">My Account</a>/
+      <a href="#">Product</a>/<a href="#">View Cart</a>/
+      <span>Checkout</span>
+    </nav>
+    <div class="checkout-container">
+      <div class="billing-details">
+        <h2>Billing Details</h2>
+        <form>
+          <div class="input-group">
+            <label>First Name*</label>
+            <input type="text" required />
+          </div>
+          <div class="input-group">
+            <label>Company Name</label>
+            <input type="text" />
+          </div>
+          <div class="input-group">
+            <label>Street Address*</label>
+            <input type="text" required />
+          </div>
+          <div class="input-group">
+            <label>Apartment, floor, etc. (optional)</label>
+            <input type="text" />
+          </div>
+          <div class="input-group">
+            <label>Town/City*</label>
+            <input type="text" required />
+          </div>
+          <div class="input-group">
+            <label>Phone Number*</label>
+            <input type="tel" required />
+          </div>
+          <div class="input-group">
+            <label>Email Address*</label>
+            <input type="email" required />
+          </div>
 
-        <h1 class="error-title">404 Not Found</h1>
-        <p class="error-text">
-          Your visited page not found. You may go home page.
-        </p>
-        <a href="index.html" class="error-btn">Back to home page</a>
+          <div class="save-info">
+            <input type="checkbox" id="save-info" />
+            <label for="save-info"
+              >Save this information for faster checkout next time</label
+            >
+          </div>
+        </form>
       </div>
-    </section>
+
+      <div class="order-summary">
+        <h3>Order Summary</h3>
+        <div class="product">
+          <img src="assets/Gamepad-Cart-Small.png" alt="LCD Monitor" />
+          <span>LCD Monitor</span>
+          <span class="price">$650</span>
+        </div>
+        <div class="product">
+          <img src="assets/Monitor-Cart-Small.png" alt="Gamepad" />
+          <span>H1 Gamepad</span>
+          <span class="price">$1100</span>
+        </div>
+        <div class="order-total">
+          <p>Subtotal: <span>$1750</span></p>
+          <p>Shipping: <span>Free</span></p>
+          <p class="total">Total: <span>$1750</span></p>
+        </div>
+
+        <div class="payment-methods">
+          <div
+            class="BankDiv"
+            style="display: flex; justify-content: space-between"
+          >
+            <div class="inputBank">
+              <input type="radio" name="payment" id="bank" />
+              <label for="bank">Bank</label>
+            </div>
+            <div class="payment-icons">
+              <img src="assets/Bkash.png" alt="Bkash" />
+              <img src="assets/Visa.png" alt="Visa" />
+              <img src="assets/Mastercard.png" alt="MasterCard" />
+              <img src="assets/Nagad.png" alt="PayPal" />
+            </div>
+          </div>
+          <input type="radio" name="payment" id="cash" />
+          <label for="cash">Cash on Delivery</label>
+        </div>
+
+        <div class="coupon">
+          <input type="text" placeholder="Coupon Code" />
+          <button class="apply-coupon">Apply Coupon</button>
+        </div>
+        <button class="place-order">Place Order</button>
+      </div>
+    </div>
 
     <!-- FOOTER -->
     <footer>
