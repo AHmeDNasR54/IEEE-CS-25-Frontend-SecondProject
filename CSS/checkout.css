@@ -18,7 +18,7 @@
   /* Breadcrumb Navigation */
 .breadcrumb {
     font-size: 14px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     color: #666;
     display: flex;
     justify-content: flex-start;
@@ -152,7 +152,7 @@
 
 .apply-coupon {
     padding: 10px;
-    background: #c9302c;
+    background: #DB4444;
     color: white;
     border: none;
     border-radius: 5px;
@@ -162,7 +162,7 @@
 .place-order {
     width: 100%;
     padding: 10px;
-    background: #c9302c;
+    background: #DB4444;
     color: white;
     border: none;
     border-radius: 5px;
