@@ -20,13 +20,16 @@
     margin-bottom: 15px;
     display: flex;
     justify-content: start;
+    gap: 10px;
     margin-left: -70%;
+    border-bottom: 0;
 }
 
 .breadcrumb a {
     text-decoration: none;
     color: #000;
     font-weight: 500;
+
 }
 
 .breadcrumb a:hover {

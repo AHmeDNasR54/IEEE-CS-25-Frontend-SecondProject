@@ -15,8 +15,12 @@
 /* Breadcrumb Navigation */
 .breadcrumb {
     font-size: 14px;
+    /* margin-bottom: 20px; */
     color: #666;
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    border-bottom: 0;
 }
 
 .breadcrumb a {
@@ -84,9 +88,9 @@
 
 /* Contact Form Section */
 .contact-form {
-    width: 60%;
+    width: 70%;
     background: #fff;
-    padding: 20px;
+    padding: 9px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
