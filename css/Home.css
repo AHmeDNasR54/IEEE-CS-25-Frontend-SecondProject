@@ -1,0 +1,424 @@
+#home{
+    width: 100vw;
+    height: 5902px;
+    display: flex;
+    flex-direction: column;
+}
+#home>main{
+    width: 100%;
+    height: 5320px;
+    padding: 0px 135px 140px;
+}
+.first-sec{
+    width: 100%;
+    height: 384px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 140px;
+}
+.categories-box{
+    width: calc(233 / 1170 *100%);
+    height: 100%;
+    border-right: solid 1px var(--primary);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 1rem;
+}
+.promo-box{
+    width: calc(892 / 1170 *100%);
+    height: calc(344 / 384 *100%);
+    background-color: var(--black);
+    align-self: flex-end;
+    padding: 58px 64px 11px 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    color: var(--white);
+    position: relative;
+}
+.promo-box::after{
+    content: "";
+    position: absolute;
+    width: 496px;
+    height: 352px;
+    background-image: url(../assets/iphone14.png);
+    background-repeat: no-repeat;
+    top: 16px;
+    right: 0px;
+}
+.iphone14{
+    max-width: 190px;
+    max-height: 49px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    color: inherit;
+}
+.iphone14 >p{
+    margin-top:22px;
+}
+.iphone14 >img{
+    max-width: 40px;
+    max-height: 100%;
+}
+.promo-box >h1{
+    max-width: 294px;
+    max-height: 120px;
+    white-space: pre-wrape;
+    color: inherit;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.promo-box >a{
+    max-width: 113px;
+    max-height: 28px;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.promo-box .arrow{
+    max-width: 24px;
+    max-height: 24px;
+}
+.pagenation{
+    max-width: 110px;
+    max-height: 12px;
+    align-self: center;
+    display: flex;
+    gap: 12px;
+}
+.pagenation >div{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    position: relative;
+    z-index: 2;
+}
+.pagenation >.active-circle{
+    background-color: var(--secondary);
+    border: solid 1px var(--white);
+}
+.today-sec{
+    width: 100%;
+    height: 493px ;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+.flag{
+    width: fit-content;
+    height: 40px;
+    padding-left: 36px;
+    position: relative;
+    font-size: 1rem;
+    color: var(--secondary);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.flag::before{
+    content: "";
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 20%;
+    height: 100%;
+    background-color: var(--secondary);
+    border-radius: 4px;
+}
+.flash-sales {
+    width: 100%;
+    max-height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 87px ;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.countdown {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    margin-right: calc(424/1170 * 100%);
+}
+
+.time {
+    text-align: center;
+}
+
+.label {
+    font-size: 12px;
+    display: block;
+}
+
+.number {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.separator {
+    font-size: 24px;
+    color:var(--secondary);
+    font-weight: bold;
+}
+
+.arrows-box {
+    max-width: 100px;
+    max-height: 46px;
+    display: flex;
+    gap: 8px;
+    /* margin-left: calc(465/1170 * 100%); */
+}
+.arrow-btn{
+    min-width: 46px;
+    min-height: 46px;
+    background-color: var(--lightGray);
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arrow-btn>img{
+    width: calc(24/46 *100%);
+    height: calc(24/46 *100%);
+}
+.first-product-group{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.first-product-group > .product-card{
+    width: 270px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.product-card::before{
+    content: attr(data-person);
+    position: absolute;
+    background-color: var(--secondary);
+    width: 55px;
+    height: 26px;
+    color: var(--white);
+    top: 12px;
+    left: 12px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 4px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-card::after{
+    content: "";
+    position: absolute;
+    background-image: url(/assets/H-E.png);
+    width: 34px;
+    height: 76px;
+    color: var(--white);
+    top: 12px;
+    right: 12px;
+}
+.photo-box{
+    width: 100%;
+    height: 250px;
+    background-color: var(--lightGray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 40px;
+    margin-bottom: 16px;
+}
+.photo-box >img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.price{
+    display: flex;
+    gap: 12px;
+    color: var(--secondary);
+}
+del{
+    color: var(--primary);
+}
+.rate{
+    display: flex;
+    gap: 8px;
+    color: var(--primary);
+}
+.view-all{
+    width: 100%;
+    height: 256px;
+    padding: 76px 0px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn-view-all{
+    color: var(--white);
+    background-color: var(--secondary);
+    width: 234px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.btn-view-all:hover{
+    color: var(--secondary);
+    background-color: var(--lightGray);
+}
+.view-all > hr{
+    width: 100%;
+    height: 1px;
+    background-color: var(--primary);
+}
+.categ-section{
+    width: 100%;
+    height: 313px;
+}
+.BBC{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 36px;
+    font-weight: 600;
+    margin: 20px 0px 60px;
+}
+.group-of-all-categ{
+    width: 100%;
+    height: 145px;
+    display: flex;
+    justify-content: space-between;
+}
+.single-categ{
+    width: 170px;
+    height: 100%;
+    background-color: var(--lightGray);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.single-categ:hover{
+    background-color: var(--secondary);
+}
+.hrTwo{
+    width: 100%;
+    height: 1px;
+    background-color: var(--primary);
+    margin: 70px 0px;
+}
+.this-month-sec{
+    width: 100%;
+    height: 518px;
+    display: flex;
+    flex-direction: column;
+}
+.VA-btn{
+    width: 159px;
+    height: 56px;
+    background-color: var(--secondary);
+    border: none;
+    color: var(--white);
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.Enhance{
+    width: 100%;
+    height: 500px;
+    margin: 140px 0px 70px;
+}
+#our-products{
+    width: 100%;
+    height: 1156px;
+}
+#with-colers{
+    margin-top: 60px;
+}
+.product-card>img{
+    width: 48px;
+    height: 20px;
+}
+#second-VA-brn{
+    margin: 60px auto 140px auto;
+}
+.Featured{
+    width: 100%;
+    height: 768px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+.grid-box{
+    width: 100%;
+    height: 600px;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,284px);
+    gap: 30px;
+}
+.grid-box>img{
+    width: 100%;
+    height: 100%;
+}
+#PlayStation{
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+#women-collection{
+    grid-column: 3/5;
+    grid-row: 1/2;
+}
+.properties{
+    width: 943px;
+    height: 161px;
+    margin:140px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.properties>div{
+    max-width: 270px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 600;
+}
+.properties img{
+    width: 80px;
+    height: 80px;
+}
+.properties p{
+    font-size: 14px;
+    font-weight: 400;
+}
