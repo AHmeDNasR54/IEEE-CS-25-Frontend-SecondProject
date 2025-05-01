@@ -31,7 +31,7 @@
 .b::after , .E::after{
     content: "";
     position: absolute;
-    background-image: url(/assets/basket.png);
+    background-image: url(../assets/basket.png);
     width: 34px;
     height: 34px;
     color: var(--white);
@@ -81,7 +81,7 @@
     gap: 8px;
 }
 .E::after{
-    background-image: url(/assets/basket.png);
+    background-image: url(../assets/eye.png);
 }
 #NEW::before{
     background-color: #00FF66;

@@ -229,7 +229,7 @@ h2 {
 .product-card::after{
     content: "";
     position: absolute;
-    background-image: url(/assets/H-E.png);
+    background-image: url(../assets/H-E.png);
     width: 34px;
     height: 76px;
     color: var(--white);
